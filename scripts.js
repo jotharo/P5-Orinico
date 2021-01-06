@@ -65,6 +65,7 @@ request.onload = function () {
   countCartItems();
 }
 
+// Départ connexion à l'API
 request.send();
 
 

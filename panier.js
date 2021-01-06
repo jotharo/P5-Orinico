@@ -67,20 +67,16 @@ if (cartTeddies == undefined || cartTeddies.length === 0) {
 
     // Variable où l'on va stocker le prix total 
     var sum = null;   
-  
-    // The JavaScript Array.prototype specifies a built-in method called
+
+    // Fonction du calcul du total du panier
     cartTeddies.forEach(function(value){
     sum += value.teddyQuantity*value.teddyPrice;
     });
 
-    console.log(sum);
-
+    // Const pour affichage html du total
     const totalPrice = document.createElement('p');
     totalPrice.setAttribute('id', 'totalPrice');
     totalPrice.textContent = "Total avant frais de port : " + sum + " " + "$";
-
-    // Création HTML de la div totalPrice
-    //app.appendChild(totalPrice);
 
 
     //AFFICHAGE DU CONTENU DU PANIER
@@ -118,8 +114,6 @@ if (cartTeddies == undefined || cartTeddies.length === 0) {
             const trashCan = document.createElement('span');
             trashCan.setAttribute('class', 'material-icons', );
             trashCan.innerHTML = "delete_outline";
-            
-
 
 
             // Création de la fonction de suppression d'item > Active à l'écoute du click du bouton btnDelete
@@ -163,7 +157,7 @@ if (cartTeddies == undefined || cartTeddies.length === 0) {
 
 // AFFICHAGE DU FORMULAIRE
 
-//Fonction showMyForm > Va rendre apparent le form seulement si il y a quelque chose dans le panier 
+//Fonction showMyForm > Va rendre apparent le formulaire seulement si il y a quelque chose dans le panier 
 
 function showMyForm() {  
     var myForm = document.getElementById('formInfos');
@@ -218,7 +212,7 @@ function sendData() {
         sessionStorage.setItem('contact', JSON.stringify(r.contact));
         sessionStorage.setItem('orderId', JSON.stringify(r.orderId));
         sessionStorage.setItem('totalPrice', JSON.stringify(sum));
-        //Redirection vers Accueil
+        //Redirection vers Accueil potentiel index.html + temps de chargement 
         window.location.href = "confirmation.html";
         // Efface localStorage
         localStorage.clear()

@@ -21,8 +21,7 @@ console.log(id)
 // Création de la constante fetchTeddy pour récupérer les données du Teddy sélectionné grâce à URL + id spécifique au Teddy
 const fetchTeddy = fetch (apiURL + id) 
 
-    // Instructions d'ajout du Teddy au Panier 
-
+    // Instructions d'ajout du Teddy au Panier
    
     function addToCart(event) {
         event.preventDefault()
@@ -38,7 +37,6 @@ const fetchTeddy = fetch (apiURL + id)
         }
 
         // Variable - On créé un localStorage teddiesInCart ou un array vide si null  >>>>LE PROBLEME EST LA ???
-       
         let cartTeddies = JSON.parse(localStorage.getItem('cartTeddies')) || [];
 
         let teddy = cartTeddies.find(item => {
@@ -47,10 +45,7 @@ const fetchTeddy = fetch (apiURL + id)
 
         // L'ours n'a pas été trouvé il faut l'ajouter a la liste
         if (teddy == undefined) {
-
             cartTeddies.push(selectedTeddy)
-            
-
         }
 
         // L'ours a été trouvé on met a jour sa quantité
@@ -108,8 +103,8 @@ fetchTeddy.then(response => {
     const colors = teddy.colors    
                          
             // Dropdown : L'instruction for...of va créer une boucle Array qui parcourt un objet itérable (l'array des couleurs) et va éxecuter des instructions pour la valeur de chaque propriété.
-    for (const color of colors) {                                    //  for (variable of iterable) 
-        var option = document.createElement('option');               //      instructions
+    for (const color of colors) {                                
+        var option = document.createElement('option');              
         option.value = color;
         option.textContent = color;
         select.appendChild(option);
