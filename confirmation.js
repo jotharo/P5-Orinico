@@ -38,7 +38,7 @@ const order = document.createElement('p');
 order.textContent = 'Numéro de commande : '+ orderId;
 
 const total = document.createElement('p');
-total.textContent = 'Total de votre commande : '+ totalPrice + '$';
+total.textContent = 'Prix total de votre commande : '+ totalPrice + '$';
 
 
 
