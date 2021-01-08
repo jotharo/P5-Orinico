@@ -35,10 +35,10 @@ const h3 = document.createElement('h3');
 h3.textContent = 'Récapitulatif de votre commande '+' '+':';
 
 const order = document.createElement('p');
-order.textContent = 'Numméro de commande : '+ orderId;
+order.textContent = 'Numéro de commande : '+ orderId;
 
 const total = document.createElement('p');
-total.textContent = 'Total de votre commande : '+ totalPrice + '$';
+total.textContent = 'Prix total de votre commande : '+ totalPrice + '$';
 
 
 
