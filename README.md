@@ -1,17 +1,48 @@
-# P5-Orinico OCR 
+# 📎 Project 5 - Orinico 
  
-To see and interact with the page online follow instructions
- 
+## Skills Assessed
+
+* Interact with a web service using JavaScript
+* Create a test plan for an application
+* Validate data from external sources
+* Manage JavaScript events
+
+## Goal : Create an e-commerce website called Orinico
+
+* [The Project in OpenClassrooms (written in french)](https://openclassrooms.com/fr/paths/185/projects/675/assignment)
+* [Guidelines](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P5/P5_Spe%CC%81cifications%20fonctionnelles%20Orinoco%20(2).pdf)
+
+***
+
+# 🔨 Get Started !
+
 ## Prerequisites
  
 You will need to have Node and npm installed locally on your machine.
 
-## Installation
+Clone this project from GitHub.
 
-Clone the backend part of my repository Orinoco : https://github.com/jotharo/Orinoco
+## Backend
 
-From within the project folder, run npm install. You can then run the server with node server. The server should run on localhost with default port 3000. If the server runs on another port for any reason, this is printed to the console when the server starts, e.g. Listening on port 3001.
+Open a terminal, cd "backend" :
 
-## Enjoy !
+           * "npm install",
+           * "node server",
+           * The server is listening on port : http://localhost:3000
+
+## Connecting to the app
+
+**Join on your browser : http://localhost:3001/index.html**
+
+***
+# 💡 What can I do in this app ?
+
+This is an e-commerce website : you can shop and order Teddy Bears 🧸
+
+*Screencaps to come*
+
+
+
+
  
  
